@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="cardview_dark_background">#ff424242</color>
+    <color name="cardview_light_background">#ffffffff</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="colorAccent">#ffff4081</color>
+    <color name="colorPrimary">#fffcbe2e</color>
+    <color name="colorPrimaryDark">#fffbca04</color>
+    <color name="counter_text_bg">#ff626262</color>
+    <color name="counter_text_color">#ffc5c4c4</color>
+    <color name="list_background">#ff303030</color>
+    <color name="list_background_pressed">#ff992416</color>
+    <color name="list_divider">#ff272727</color>
+    <color name="list_item_title">#ffffffff</color>
 </resources>

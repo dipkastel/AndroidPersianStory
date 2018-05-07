@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bghome"
+    android:gravity="center"
+    android:padding="50.0dip">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernameWrapper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#ffffffff">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ایمیل خود را وارد کنید"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#ffffffff"
+                    app:et_dividerColor="#ffffffff" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.rey.material.widget.Button
+                android:id="@+id/sendpass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/my_button_bg"
+                android:text="ارسال رمز به ایمیل"
+                android:textColor="#ffffffff"
+                android:textSize="19.0sp"
+                app:rd_cornerRadius="40.0dip"
+                app:rd_enable="true"
+                app:rd_rippleType="wave" />
+
+            <com.rey.material.widget.Button
+                android:id="@+id/back"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/my_button_bg"
+                android:text="بازگشت"
+                android:textColor="#ffffffff"
+                android:textSize="19.0sp"
+                app:rd_cornerRadius="40.0dip"
+                app:rd_enable="true"
+                app:rd_rippleType="wave" />
+
+            <com.rey.material.widget.ProgressView
+                android:id="@+id/loading"
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_below="@+id/sendpass"
+                android:layout_marginTop="20.0dip"
+                app:pv_autostart="false"
+                app:pv_circular="true"
+                app:pv_progressMode="indeterminate"
+                app:pv_progressStyle="@style/Material.Drawable.CircularProgress" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

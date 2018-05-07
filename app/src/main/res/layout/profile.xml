@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bglist"
+    android:gravity="center"
+    android:padding="50.0dip">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:padding="5.0dip"
+                android:src="@drawable/flatuser_24"
+                app:civ_border_color="#ffc8c8c8"
+                app:civ_border_width="2.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center"
+                    android:textColor="#ffffffff" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.rey.material.widget.TextView
+                        android:id="@+id/count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#ffffffff"
+                        android:textSize="19.0sp" />
+
+                    <com.rey.material.widget.TextView
+                        android:id="@+id/lblcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="موجودی سکه : "
+                        android:textColor="#ffffffff"
+                        android:textSize="19.0sp" />
+                </LinearLayout>
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/buy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/my_button_bg2"
+                    android:text="افزودن سکه"
+                    android:textColor="#ffffffff"
+                    android:textSize="19.0sp"
+                    app:rd_cornerRadius="5.0dip"
+                    app:rd_enable="true"
+                    app:rd_rippleType="wave" />
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/logout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/my_button_bg2"
+                    android:text="خروج از حساب"
+                    android:textColor="#ffffffff"
+                    android:textSize="19.0sp"
+                    app:rd_cornerRadius="5.0dip"
+                    app:rd_enable="true"
+                    app:rd_rippleType="wave" />
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/back"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/my_button_bg2"
+                    android:text="بازگشت"
+                    android:textColor="#ffffffff"
+                    android:textSize="19.0sp"
+                    app:rd_cornerRadius="5.0dip"
+                    app:rd_enable="false"
+                    app:rd_rippleType="wave" />
+
+                <com.rey.material.widget.ProgressView
+                    android:id="@+id/loading"
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:layout_below="@+id/back"
+                    android:layout_marginTop="20.0dip"
+                    app:pv_autostart="false"
+                    app:pv_circular="true"
+                    app:pv_progressMode="indeterminate"
+                    app:pv_progressStyle="@style/Material.Drawable.CircularProgress" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

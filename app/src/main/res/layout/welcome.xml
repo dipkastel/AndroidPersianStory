@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/c1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgwlc"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="256.0dip"
+            android:layout_height="256.0dip"
+            android:src="@drawable/logo" />
+
+        <com.bloom.persianstory.Fonts.IranTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="خوش آمدید"
+            android:textColor="#ffffffff"
+            android:textSize="24.0sp" />
+
+        <com.bloom.persianstory.Fonts.IranTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="طراحی و برنامه نویسی توسط استدیو نگاتیو"
+            android:textColor="#ffffffff"
+            android:textSize="19.0sp" />
+
+        <com.rey.material.widget.ProgressView
+            android:id="@+id/loading"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_below="@+id/mehman"
+            android:layout_marginTop="20.0dip"
+            app:pv_autostart="true"
+            app:pv_circular="true"
+            app:pv_progressMode="indeterminate"
+            app:pv_progressStyle="@style/Material.Drawable.CircularProgress" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@+id/RelativeLayout1" android:background="@drawable/bghome" android:padding="50.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout android:textColorHint="#ffffffff" android:id="@+id/usernameWrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textColor="#ffffffff" android:id="@+id/username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="نام کاربری" android:inputType="textPersonName" app:et_dividerColor="#ffffffff" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:textColorHint="#ffffffff" android:id="@+id/passWrapper1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textColor="#ffffffff" android:id="@+id/pass1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="رمز عبور" android:inputType="textWebPassword" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:textColorHint="#ffffffff" android:id="@+id/passWrapper2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textColor="#ffffffff" android:id="@+id/pass2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="تکرار رمز عبور" android:inputType="textWebPassword" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:textColorHint="#ffffffff" android:id="@+id/emailWrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textColor="#ffffffff" android:id="@+id/email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="آدرس ایمیل" android:inputType="textWebEmailAddress" app:et_dividerColor="#ffffffff" />
+            </android.support.design.widget.TextInputLayout>
+            <com.rey.material.widget.Button android:textSize="19.0sp" android:textColor="#ffffffff" android:id="@+id/register" android:background="@drawable/my_button_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="ثبت و ورود به برنامه" app:rd_enable="true" app:rd_rippleType="wave" app:rd_cornerRadius="40.0dip" />
+            <com.rey.material.widget.Button android:textSize="19.0sp" android:textColor="#ffffffff" android:id="@+id/back" android:background="@drawable/my_button_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="بازگشت" app:rd_enable="true" app:rd_rippleType="wave" app:rd_cornerRadius="40.0dip" />
+            <com.rey.material.widget.ProgressView android:id="@+id/loading" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="20.0dip" android:layout_below="@+id/back" app:pv_progressMode="indeterminate" app:pv_autostart="false" app:pv_circular="true" app:pv_progressStyle="@style/Material.Drawable.CircularProgress" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
