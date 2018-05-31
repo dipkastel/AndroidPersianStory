@@ -19,14 +19,14 @@
             android:layout_height="256.0dip"
             android:src="@drawable/logo" />
 
-        <com.bloom.persianstory.Fonts.IranTextview
+        <com.bloom.persianstory.view.IranTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="خوش آمدید"
             android:textColor="#ffffffff"
             android:textSize="24.0sp" />
 
-        <com.bloom.persianstory.Fonts.IranTextview
+        <com.bloom.persianstory.view.IranTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="طراحی و برنامه نویسی توسط استدیو نگاتیو"

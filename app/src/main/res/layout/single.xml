@@ -36,7 +36,7 @@
                     android:layout_gravity="center|top"
                     android:orientation="vertical">
 
-                    <ir.tg.bahar.Lists.CircularNetworkImageView
+                    <com.bloom.persianstory.model.Lists.CircularNetworkImageView
                         android:id="@+id/thumbnail2"
                         android:layout_width="150.0dip"
                         android:layout_height="150.0dip"
@@ -52,20 +52,20 @@
                         android:layout_marginTop="15.0dip"
                         android:orientation="vertical">
 
-                        <ir.tg.bahar.Fonts.IranTextview
+                        <com.bloom.persianstory.view.IranTextview
                             android:id="@+id/nameStory"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="21.0sp" />
 
-                        <ir.tg.bahar.Fonts.IranTextview
+                        <com.bloom.persianstory.view.IranTextview
                             android:id="@+id/tellerStory"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textSize="18.0sp" />
 
-                        <ir.tg.bahar.Fonts.IranTextview
+                        <com.bloom.persianstory.view.IranTextview
                             android:id="@+id/rateStory"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
