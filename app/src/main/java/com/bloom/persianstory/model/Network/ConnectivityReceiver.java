@@ -36,7 +36,7 @@ public class ConnectivityReceiver extends BroadcastReceiver
   }
 
   public void setConnectivityReceiverListener(ConnectivityReceiverListener _connectivityReceiverListener){
-    this.connectivityReceiverListener = _connectivityReceiverListener;
+    connectivityReceiverListener = _connectivityReceiverListener;
   }
 }
 

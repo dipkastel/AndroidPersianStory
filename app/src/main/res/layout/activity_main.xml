@@ -28,17 +28,18 @@
             android:layout_height="0.0dip"
             android:layout_gravity="center"
             android:layout_weight="1.0"
+            android:paddingTop="@dimen/_50sdp"
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/jadid"
-                android:layout_width="wrap_content"
+                android:id="@+id/bartar"
+                android:layout_width="0.0dip"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1.0"
                 android:gravity="center"
-                android:scaleType="fitCenter"
-                android:src="@drawable/jadidtarin" />
+                android:scaleType="center"
+                android:src="@drawable/btn_best_stories" />
         </TableRow>
 
         <TableRow
@@ -48,43 +49,27 @@
             android:layout_weight="1.0">
 
             <ImageView
-                android:id="@+id/bartar"
+                android:id="@+id/jadid"
                 android:layout_width="0.0dip"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_gravity="center|top"
                 android:layout_weight="1.0"
-                android:gravity="center"
                 android:padding="10.0dip"
-                android:scaleType="center"
-                android:src="@drawable/bartarin" />
-
-            <ImageView
-                android:id="@+id/profile"
-                android:layout_width="0.0dip"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_weight="1.0"
-                android:gravity="right"
-                android:padding="10.0dip"
-                android:scaleType="center"
-                android:src="@drawable/profile" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="wrap_content"
-            android:layout_height="0.0dip"
-            android:layout_weight="1.0">
-
-            <ImageView
-                android:id="@+id/bahar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1.0"
                 android:gravity="center"
                 android:scaleType="fitCenter"
-                android:src="@drawable/baharr" />
+                android:src="@drawable/btn_saved_stories" />
+
+
+            <ImageView
+                android:id="@+id/about"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_weight="1.0"
+                android:paddingRight="10.0dip"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_about" />
         </TableRow>
 
         <TableRow
@@ -94,24 +79,15 @@
             android:layout_weight="1.0">
 
             <ImageView
-                android:id="@+id/about"
-                android:layout_width="0.0dip"
+                android:id="@+id/bahar"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_gravity="bottom"
                 android:layout_weight="1.0"
-                android:gravity="center"
-                android:scaleType="fitCenter"
-                android:src="@drawable/about" />
+                android:gravity="bottom"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_all_stories" />
 
-            <ImageView
-                android:id="@+id/hemayat"
-                android:layout_width="0.0dip"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:scaleType="matrix"
-                android:src="@drawable/hemayat" />
         </TableRow>
     </TableLayout>
 

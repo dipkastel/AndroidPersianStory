@@ -19,5 +19,32 @@
         android:src="@drawable/n_bg_form_login"
         android:scaleType="centerCrop"
         />
+    <LinearLayout
+        android:id="@+id/LL_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_80sdp">
+
+        <ProgressBar
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+            />
+        <com.bloom.persianstory.view.IranTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/counter_text_bg"
+            android:gravity="center"
+            android:text="خطا در بارگذاری اطلاعات \n تلاش مجدد"
+
+            />
+    </LinearLayout>
 </RelativeLayout>
 </RelativeLayout>

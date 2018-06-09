@@ -2,182 +2,278 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/c1"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@drawable/single"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:gravity="center"
-    android:orientation="vertical"
-    android:padding="10.0dip">
-
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <FrameLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|top"
-                    android:layout_marginLeft="3.0dip"
-                    android:layout_marginTop="50.0dip"
-                    android:src="@drawable/content" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|top"
-                    android:orientation="vertical">
-
-                    <com.bloom.persianstory.model.Lists.CircularNetworkImageView
-                        android:id="@+id/thumbnail2"
-                        android:layout_width="150.0dip"
-                        android:layout_height="150.0dip"
-                        android:layout_gravity="center|top"
-                        android:padding="5.0dip"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/logo2" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|top"
-                        android:layout_marginTop="15.0dip"
-                        android:orientation="vertical">
-
-                        <com.bloom.persianstory.view.IranTextview
-                            android:id="@+id/nameStory"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="21.0sp" />
-
-                        <com.bloom.persianstory.view.IranTextview
-                            android:id="@+id/tellerStory"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:textSize="18.0sp" />
-
-                        <com.bloom.persianstory.view.IranTextview
-                            android:id="@+id/rateStory"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:textSize="18.0sp" />
-                    </LinearLayout>
-                </LinearLayout>
-            </FrameLayout>
-
-            <LinearLayout
-                android:id="@+id/ll"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20.0dip"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <com.rey.material.widget.Button
-                    android:id="@+id/rateSingle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5.0dip"
-                    android:background="@drawable/my_button_single"
-                    android:enabled="false"
-                    android:text="امتیاز"
-                    android:textColor="#ffffffff"
-                    android:textSize="19.0sp"
-                    app:rd_cornerRadius="20.0dip"
-                    app:rd_enable="true"
-                    app:rd_rippleType="touch" />
-
-                <com.rey.material.widget.Button
-                    android:id="@+id/playSingle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5.0dip"
-                    android:background="@drawable/my_button_single"
-                    android:enabled="false"
-                    android:text="پخش"
-                    android:textColor="#ffffffff"
-                    android:textSize="19.0sp"
-                    app:rd_cornerRadius="20.0dip"
-                    app:rd_enable="true"
-                    app:rd_rippleType="touch" />
-
-                <com.rey.material.widget.Button
-                    android:id="@+id/saveSingle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5.0dip"
-                    android:background="@drawable/my_button_single"
-                    android:enabled="false"
-                    android:text="ذخیره"
-                    android:textColor="#ffffffff"
-                    android:textSize="19.0sp"
-                    app:rd_cornerRadius="20.0dip"
-                    app:rd_enable="true"
-                    app:rd_rippleType="touch" />
-            </LinearLayout>
-
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_350sdp">
             <RelativeLayout
-                android:id="@+id/rl"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_350sdp"
+                android:background="@drawable/bg_image_player">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="@dimen/_280sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/bg_image_player_iner">
+
+                    <ImageView
+                        android:id="@+id/storyImage"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="@dimen/_250sdp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:src="@drawable/logo"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center">
-
-                <TextView
-                    android:id="@+id/duration"
-                    android:layout_width="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
-                    android:layout_margin="5.0dip"
-                    android:text="00:00"
-                    android:textColor="#ffffffff"
-                    android:textSize="16.0sp" />
-
-                <SeekBar
-                    android:id="@+id/seekbar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_below="@+id/duration" />
-
-                <TextView
+                    android:layout_margin="@dimen/_10sdp">
+                    <TextView
                     android:id="@+id/endtime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:text="00:00"
-                    android:textColor="#ffffffff"
+                    android:textColor="#000"
+                        android:layout_marginBottom="@dimen/_5sdp"
                     android:textSize="16.0sp" />
-            </RelativeLayout>
-        </LinearLayout>
-    </ScrollView>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:gravity="center">
+                    <SeekBar
+                    android:id="@+id/seekbar"
+                        android:layout_below="@+id/endtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                        android:progressDrawable="@drawable/blue_scrubber_progress"
+                        android:thumb="@drawable/blue_scrubber_control"  />
 
-        <com.rey.material.widget.ProgressView
-            android:id="@+id/loading"
-            android:layout_width="32.0dip"
-            android:layout_height="32.0dip"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@+id/ll"
-            app:pv_autostart="true"
-            app:pv_circular="true"
-            app:pv_progressMode="indeterminate"
-            app:pv_progressStyle="@style/Material.Drawable.CircularProgress" />
-    </LinearLayout>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:background="#eaeade"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:weightSum="3">
+                    <ImageView
+                        android:id="@+id/btn_Like"
+                        android:layout_width="0.0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_like_off_list"/>
+                    <ImageView
+                        android:id="@+id/btn_play"
+                        android:layout_width="0.0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_play_list"/>
+                    <ImageView
+                        android:id="@+id/btn_save"
+                        android:layout_width="0.0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_save_player"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--<ScrollView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center|top"-->
+                    <!--android:layout_marginLeft="3.0dip"-->
+                    <!--android:layout_marginTop="50.0dip"-->
+                    <!--android:src="@drawable/content" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center|top"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<com.bloom.persianstory.view.CircularNetworkImageView-->
+                        <!--android:id="@+id/thumbnail2"-->
+                        <!--android:layout_width="150.0dip"-->
+                        <!--android:layout_height="150.0dip"-->
+                        <!--android:layout_gravity="center|top"-->
+                        <!--android:padding="5.0dip"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:src="@drawable/logo2" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center|top"-->
+                        <!--android:layout_marginTop="15.0dip"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<com.bloom.persianstory.view.IranTextview-->
+                            <!--android:id="@+id/nameStory"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="21.0sp" />-->
+
+                        <!--<com.bloom.persianstory.view.IranTextview-->
+                            <!--android:id="@+id/tellerStory"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:textSize="18.0sp" />-->
+
+                        <!--<com.bloom.persianstory.view.IranTextview-->
+                            <!--android:id="@+id/rateStory"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:textSize="18.0sp" />-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+            <!--</FrameLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20.0dip"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<com.rey.material.widget.Button-->
+                    <!--android:id="@+id/rateSingle"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5.0dip"-->
+                    <!--android:background="@drawable/my_button_single"-->
+                    <!--android:enabled="false"-->
+                    <!--android:text="امتیاز"-->
+                    <!--android:textColor="#ffffffff"-->
+                    <!--android:textSize="19.0sp"-->
+                    <!--app:rd_cornerRadius="20.0dip"-->
+                    <!--app:rd_enable="true"-->
+                    <!--app:rd_rippleType="touch" />-->
+
+                <!--<com.rey.material.widget.Button-->
+                    <!--android:id="@+id/playSingle"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5.0dip"-->
+                    <!--android:background="@drawable/my_button_single"-->
+                    <!--android:enabled="false"-->
+                    <!--android:text="پخش"-->
+                    <!--android:textColor="#ffffffff"-->
+                    <!--android:textSize="19.0sp"-->
+                    <!--app:rd_cornerRadius="20.0dip"-->
+                    <!--app:rd_enable="true"-->
+                    <!--app:rd_rippleType="touch" />-->
+
+                <!--<com.rey.material.widget.Button-->
+                    <!--android:id="@+id/saveSingle"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5.0dip"-->
+                    <!--android:background="@drawable/my_button_single"-->
+                    <!--android:enabled="false"-->
+                    <!--android:text="ذخیره"-->
+                    <!--android:textColor="#ffffffff"-->
+                    <!--android:textSize="19.0sp"-->
+                    <!--app:rd_cornerRadius="20.0dip"-->
+                    <!--app:rd_enable="true"-->
+                    <!--app:rd_rippleType="touch" />-->
+            <!--</LinearLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rl"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/duration"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_margin="5.0dip"-->
+                    <!--android:text="00:00"-->
+                    <!--android:textColor="#ffffffff"-->
+                    <!--android:textSize="16.0sp" />-->
+
+                <!--<SeekBar-->
+                    <!--android:id="@+id/seekbar"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_below="@+id/duration" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/endtime"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text="00:00"-->
+                    <!--android:textColor="#ffffffff"-->
+                    <!--android:textSize="16.0sp" />-->
+            <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:gravity="center">-->
+
+        <!--<com.rey.material.widget.ProgressView-->
+            <!--android:id="@+id/loading"-->
+            <!--android:layout_width="32.0dip"-->
+            <!--android:layout_height="32.0dip"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_below="@+id/ll"-->
+            <!--app:pv_autostart="true"-->
+            <!--app:pv_circular="true"-->
+            <!--app:pv_progressMode="indeterminate"-->
+            <!--app:pv_progressStyle="@style/Material.Drawable.CircularProgress" />-->
+    <!--</LinearLayout>-->
 </android.support.design.widget.CoordinatorLayout>

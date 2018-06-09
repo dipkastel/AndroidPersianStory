@@ -7,6 +7,9 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+
+import com.bloom.persianstory.model.entities.Response.Story;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,18 +18,6 @@ import java.util.ArrayList;
 public class DBHandler extends SQLiteOpenHelper
   implements StoryListener
 {
-  private static final String DB_NAME = "db";
-  private static final int DB_VERSION = 1;
-  private static final String KEY_ID = "id";
-  private static final String KEY_NAME = "name";
-  private static final String KEY_PIC = "pic";
-  private static final String KEY_PID = "pid";
-  private static final String KEY_PRICE = "price";
-  private static final String KEY_SOUND = "sound";
-  private static final String KEY_STAR = "star";
-  private static final String KEY_TELLER = "teller";
-  private static final String KEY_TIME = "time";
-  private static final String TABLE_NAME = "content";
   String CREATE_TABLE = "CREATE TABLE content (id INTEGER PRIMARY KEY,pid INTEGER,name TEXT,teller TEXT,pic TEXT,sound TEXT,star TEXT,time TEXT,price TEXT)";
   String DROP_TABLE = "DROP TABLE IF EXISTS content";
   public final String Name = "db";
@@ -48,11 +39,11 @@ public class DBHandler extends SQLiteOpenHelper
     try
     {
       ContentValues localContentValues = new ContentValues();
-      localContentValues.put("id", Integer.valueOf(paramStory.getPid()));
-      localContentValues.put("pid", Integer.valueOf(paramStory.getPid()));
+      localContentValues.put("id", Integer.valueOf(paramStory.getId()));
+      localContentValues.put("pid", Integer.valueOf(paramStory.getId()));
       localContentValues.put("name", paramStory.getName());
-      localContentValues.put("time", paramStory.getTime());
-      localContentValues.put("star", paramStory.getStar());
+//      localContentValues.put("time", paramStory.getTime());
+//      localContentValues.put("star", paramStory.getStar());
       localContentValues.put("sound", paramStory.getSound());
       localContentValues.put("teller", paramStory.getTeller());
       localContentValues.put("pic", paramStory.getPic());
@@ -119,7 +110,7 @@ public class DBHandler extends SQLiteOpenHelper
         while (!localCursor.isAfterLast())
         {
           Story localStory = new Story();
-          localStory.setId(localCursor.getInt(0));
+          localStory.setId(localCursor.getInt(0)+"");
           localStory.setName(localCursor.getString(1));
           localStory.setPic(localCursor.getString(2));
           localStory.setPrice(localCursor.getString(3));
@@ -213,8 +204,3 @@ public class DBHandler extends SQLiteOpenHelper
     }
   }
 }
-
-/* Location:           F:\programs\androidTools\app_dex2jar.jar
- * Qualified Name:     ir.tg.bahar.db.DBHandler
- * JD-Core Version:    0.6.0
- */

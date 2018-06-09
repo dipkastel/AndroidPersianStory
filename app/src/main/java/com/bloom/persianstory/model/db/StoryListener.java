@@ -1,5 +1,7 @@
 package com.bloom.persianstory.model.db;
 
+import com.bloom.persianstory.model.entities.Response.Story;
+
 import java.util.ArrayList;
 
 public abstract interface StoryListener
@@ -10,8 +12,3 @@ public abstract interface StoryListener
 
   public abstract int getStoryCount();
 }
-
-/* Location:           F:\programs\androidTools\app_dex2jar.jar
- * Qualified Name:     ir.tg.bahar.db.StoryListener
- * JD-Core Version:    0.6.0
- */

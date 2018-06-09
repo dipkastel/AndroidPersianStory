@@ -23,4 +23,11 @@ public class ExampleInstrumentedTest {
 
         assertEquals("com.bloom.persianstory", appContext.getPackageName());
     }
+    @Test
+    public void testSharedPrefrences() throws Exception {
+        // Context of the app under test.
+        Context appContext = InstrumentationRegistry.getTargetContext();
+
+        assertEquals("com.bloom.persianstory", appContext.getPackageName());
+    }
 }
